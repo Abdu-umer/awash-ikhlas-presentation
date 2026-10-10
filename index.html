@@ -13,19 +13,19 @@
   <!-- ======================================================== -->
   <!-- Top Responsive Brand Header                              -->
   <!-- ======================================================== -->
-  <header id="mainHeader" class="w-full h-16 bg-white border-b border-silver-border px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0">
-    <div class="flex items-center gap-3">
-      <div class="w-2.5 h-2.5 rounded-full bg-brand-gold"></div>
-      <div class="flex items-center gap-2">
-        <span id="brandNameText" class="text-brand-blue font-bold text-sm tracking-wider uppercase transition-colors">Awash Bank</span>
+  <header id="mainHeader" class="w-full h-14 sm:h-16 bg-white border-b border-silver-border px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0">
+    <div class="flex items-center gap-2 sm:gap-3 min-w-0">
+      <div class="w-2.5 h-2.5 rounded-full bg-brand-gold flex-shrink-0"></div>
+      <div class="flex items-center gap-1.5 sm:gap-2 truncate">
+        <span id="brandNameText" class="text-brand-blue font-bold text-xs sm:text-sm tracking-wider uppercase transition-colors truncate">Awash Bank</span>
         <span class="text-silver-light">/</span>
-        <span id="directorateText" class="text-silver-dark font-medium text-xs tracking-wider uppercase transition-colors">Interest-Free Banking Directorate</span>
+        <span id="directorateText" class="text-silver-dark font-medium text-[10px] sm:text-xs tracking-wider uppercase transition-colors truncate">IFB Directorate</span>
       </div>
     </div>
 
     <!-- Navigation Helpers, Print PDF & Fullscreen -->
-    <div class="flex items-center gap-3">
-      <div id="navHelpBadge" class="hidden md:flex items-center gap-2 text-silver text-xs transition-colors mr-1">
+    <div class="flex items-center gap-1.5 sm:gap-2 md:gap-3 flex-shrink-0">
+      <div id="navHelpBadge" class="hidden lg:flex items-center gap-2 text-silver text-xs transition-colors mr-1">
         <span class="text-silver-light">Navigate:</span>
         <kbd class="px-2 py-0.5 bg-silver-subtle text-silver-dark font-semibold rounded text-[11px] border border-silver-border">←</kbd>
         <kbd class="px-2 py-0.5 bg-silver-subtle text-silver-dark font-semibold rounded text-[11px] border border-silver-border">→</kbd>
@@ -34,19 +34,26 @@
       </div>
 
       <!-- Direct Download Pre-rendered PDF -->
-      <a id="downloadPdfBtn" href="./Awash_Ikhlas_Rebranding_Deck.pdf" download="Awash_Ikhlas_Rebranding_Deck.pdf" title="Download High-Res 10-Page PDF (16:9 Landscape)" class="px-3 py-1.5 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-medium flex items-center gap-1.5">
+      <a id="downloadPdfBtn" href="./Awash_Ikhlas_Rebranding_Deck.pdf" download="Awash_Ikhlas_Rebranding_Deck.pdf" title="Download High-Res 10-Page PDF (16:9 Landscape)" class="px-2.5 sm:px-3 py-1.5 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-medium flex items-center gap-1.5">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
-        <span>Download PDF</span>
+        <span class="hidden sm:inline">Download </span><span>PDF</span>
       </a>
 
       <!-- 1-Click Print/Export PDF Button -->
-      <button id="printPdfBtn" title="Export PDF Handout (Ctrl+P)" class="px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium flex items-center gap-1.5">
+      <button id="printPdfBtn" title="Export PDF Handout (Ctrl+P)" class="hidden sm:flex px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium items-center gap-1.5">
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
         <span>Print Deck</span>
       </button>
 
+      <!-- Slide Overview Grid Toggle Button (G) -->
+      <button id="overviewBtn" title="Slide Overview Grid (G)" class="px-2.5 sm:px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium flex items-center gap-1.5">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+        <span class="hidden sm:inline">Overview (G)</span>
+        <span class="sm:hidden">Grid</span>
+      </button>
+
       <!-- Full Screen Toggle Button -->
-      <button id="fullscreenBtn" title="Toggle Fullscreen (F)" class="px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium">
+      <button id="fullscreenBtn" title="Toggle Fullscreen (F)" class="hidden md:flex px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium">
         Full Screen
       </button>
     </div>
@@ -66,48 +73,48 @@
     <!-- SLIDE 1: Title Slide                       -->
     <!-- (Pattern 11 Deep Navy)                     -->
     <!-- ========================================== -->
-    <section class="slide-item active absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-24 py-10 md:py-14 bg-[#041133] overflow-hidden" data-slide="1">
+    <section class="slide-item active absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-24 py-6 sm:py-10 md:py-14 bg-[#041133] overflow-y-auto md:overflow-hidden" data-slide="1">
       
       <!-- Pattern 11 Background Layer -->
       <img src="Presentation-11.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-75" alt="Wave Pattern">
 
       <!-- Top Subtle Meta Line -->
-      <div class="w-full max-w-7xl mx-auto flex items-center justify-between text-xs tracking-wider uppercase relative z-10">
+      <div class="w-full max-w-7xl mx-auto flex items-center justify-between text-[11px] sm:text-xs tracking-wider uppercase relative z-10">
         <span class="text-slate-400 font-medium">Awash Bank IFB Initiative</span>
         <span class="text-slate-400 font-medium">Prepared by <span class="text-slate-200 font-semibold">Design Plus</span></span>
       </div>
 
       <!-- Center Typography Block -->
-      <div class="w-full max-w-4xl mx-auto text-center my-auto relative z-10">
-        <div class="text-xs font-semibold tracking-widest text-brand-gold uppercase mb-3">
+      <div class="w-full max-w-4xl mx-auto text-center my-auto py-4 relative z-10">
+        <div class="text-[11px] sm:text-xs font-semibold tracking-widest text-brand-gold uppercase mb-2 sm:mb-3">
           Phase 2: Refined Concepts & Strategic Execution
         </div>
 
-        <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold text-white tracking-tight leading-none mb-3">
+        <h1 class="text-4xl sm:text-7xl md:text-8xl font-extrabold text-white tracking-tight leading-none mb-2 sm:mb-3">
           Awash Ikhlas
         </h1>
 
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-semibold text-brand-gold tracking-tight mb-8">
+        <h2 class="text-xl sm:text-3xl md:text-4xl font-semibold text-brand-gold tracking-tight mb-4 sm:mb-8">
           Rebranding Identity & Visual Strategy
         </h2>
 
-        <div class="w-16 h-0.5 bg-slate-700/80 mx-auto mb-8"></div>
+        <div class="w-16 h-0.5 bg-slate-700/80 mx-auto mb-4 sm:mb-8"></div>
 
         <!-- Main Paragraph in Silver Color -->
-        <p class="text-slate-300 text-base sm:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
+        <p class="text-slate-300 text-sm sm:text-lg md:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
           Visualizing Trust & Sharia Compliance: A definitive corporate identity engineered for operational segregation, ethical prosperity, and cross-channel consistency.
         </p>
       </div>
 
       <!-- Bottom Metadata Bar -->
-      <div class="w-full max-w-7xl mx-auto pt-6 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs relative z-10">
+      <div class="w-full max-w-7xl mx-auto pt-4 sm:pt-6 border-t border-slate-800 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-4 text-xs relative z-10">
         <div>
-          <span class="text-slate-400 uppercase tracking-wider font-medium block text-[11px]">Prepared for</span>
-          <span class="text-white font-semibold text-sm">Awash Bank Branding and Trade Marketing Directorate</span>
+          <span class="text-slate-400 uppercase tracking-wider font-medium block text-[10px] sm:text-[11px]">Prepared for</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Awash Bank Branding and Trade Marketing Directorate</span>
         </div>
         <div class="sm:text-right">
-          <span class="text-slate-400 uppercase tracking-wider font-medium block text-[11px]">Creative Partner</span>
-          <span class="text-white font-semibold text-sm">Design Plus</span>
+          <span class="text-slate-400 uppercase tracking-wider font-medium block text-[10px] sm:text-[11px]">Creative Partner</span>
+          <span class="text-white font-semibold text-xs sm:text-sm">Design Plus</span>
         </div>
       </div>
 
@@ -118,7 +125,7 @@
     <!-- SLIDE 2: Strategic Response                -->
     <!-- (Pattern 12 Subtle Opacity: 0.07)          -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="2">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="2">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -128,45 +135,45 @@
         <span class="text-xs font-semibold tracking-widest text-brand-goldDark uppercase block mb-1">
           Strategic Foundation
         </span>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Refining the Vision: A Strategic Response
         </h2>
-        <p class="text-silver text-base sm:text-lg mt-2 max-w-4xl leading-relaxed">
+        <p class="text-silver text-xs sm:text-base md:text-lg mt-1 sm:mt-2 max-w-4xl leading-relaxed">
           Thank you for your precise and constructive feedback. For this revision, we focused our design process entirely on your three core directives:
         </p>
       </div>
 
-      <!-- 3 Directives: Clean Minimal Architectural Cards -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-3 gap-6 lg:gap-8 my-auto relative z-10 slide-directives-grid">
+      <!-- 3 Directives: Clean Minimal Architectural Cards (Stacked on mobile, 3-col on desktop) -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 lg:gap-8 my-auto py-3 relative z-10 slide-directives-grid">
         
         <!-- Directive 01 -->
-        <div class="bg-white/95 rounded-xl p-8 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white/95 rounded-xl p-5 sm:p-6 md:p-8 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
-            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-2">01 / Objective</span>
-            <h3 class="text-xl font-bold text-brand-blue mb-3">Radical Simplification</h3>
-            <p class="text-silver text-sm sm:text-base leading-relaxed">
+            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-1.5 sm:mb-2">01 / Objective</span>
+            <h3 class="text-base sm:text-lg md:text-xl font-bold text-brand-blue mb-2 sm:mb-3">Radical Simplification</h3>
+            <p class="text-silver text-xs sm:text-sm md:text-base leading-relaxed">
               Streamlining the geometry to ensure clean, memorable marks that guarantee flawless practical application across digital screens, print, and 3D signage.
             </p>
           </div>
         </div>
 
         <!-- Directive 02 -->
-        <div class="bg-white/95 rounded-xl p-8 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white/95 rounded-xl p-5 sm:p-6 md:p-8 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
-            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-2">02 / Objective</span>
-            <h3 class="text-xl font-bold text-brand-blue mb-3">Distinct Color & Typography</h3>
-            <p class="text-silver text-sm sm:text-base leading-relaxed">
+            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-1.5 sm:mb-2">02 / Objective</span>
+            <h3 class="text-base sm:text-lg md:text-xl font-bold text-brand-blue mb-2 sm:mb-3">Distinct Color & Typography</h3>
+            <p class="text-silver text-xs sm:text-sm md:text-base leading-relaxed">
               Expanding beyond a purely monochromatic palette to introduce a premium, modern aesthetic that gives Ikhlas its own unique character.
             </p>
           </div>
         </div>
 
         <!-- Directive 03 -->
-        <div class="bg-white/95 rounded-xl p-8 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white/95 rounded-xl p-5 sm:p-6 md:p-8 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
-            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-2">03 / Objective</span>
-            <h3 class="text-xl font-bold text-brand-blue mb-3">The 20/80 Balance</h3>
-            <p class="text-silver text-sm sm:text-base leading-relaxed">
+            <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase block mb-1.5 sm:mb-2">03 / Objective</span>
+            <h3 class="text-base sm:text-lg md:text-xl font-bold text-brand-blue mb-2 sm:mb-3">The 20/80 Balance</h3>
+            <p class="text-silver text-xs sm:text-sm md:text-base leading-relaxed">
               Ensuring 20% of the design visually roots the brand in the trusted Awash heritage, while 80% establishes a fresh, innovative, and highly distinct identity for Ikhlas in the Islamic banking sector.
             </p>
           </div>
@@ -187,7 +194,7 @@
     <!-- SLIDE 3: Concept 1                         -->
     <!-- (Pattern 12 Subtle Opacity: 0.07)          -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="3">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="3">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -197,19 +204,19 @@
         <span class="text-xs font-semibold tracking-widest text-brand-goldDark uppercase block mb-1">
           Concept 01 — Architectural Mark
         </span>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Concept 1: The Monolithic Archway
         </h2>
       </div>
 
-      <!-- Split Layout 50/50 -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-2 gap-8 lg:gap-12 items-center my-auto relative z-10 slide-concept-grid">
+      <!-- Split Layout: 1 col on mobile, 50/50 on desktop -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center my-auto py-3 md:py-0 relative z-10 slide-concept-grid">
         
         <!-- Left: Dual Application Frame (Light Primary & Dark VIP) -->
-        <div class="h-64 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-4 slide-dual-logo-grid">
+        <div class="h-56 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-3 sm:gap-4 slide-dual-logo-grid">
           
           <!-- Light Application -->
-          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-silver uppercase tracking-wider">
               <span>Primary</span>
               <span class="text-silver-light">Daylight</span>
@@ -221,7 +228,7 @@
           </div>
 
           <!-- Dark / VIP Application -->
-          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-brand-gold uppercase tracking-wider">
               <span>Reverse</span>
               <span class="text-slate-400">VIP / Nocturnal</span>
@@ -235,7 +242,7 @@
         </div>
 
         <!-- Right: Text Content with Silver Body -->
-        <div class="space-y-6">
+        <div class="space-y-4 sm:space-y-6">
           
           <div>
             <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider block mb-1">01 / Clarity</span>
@@ -278,7 +285,7 @@
     <!-- SLIDE 4: Concept 2 – The Dynamic Flow      -->
     <!-- (Pattern 12 Subtle Opacity: 0.07)          -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="4">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="4">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -288,19 +295,19 @@
         <span class="text-xs font-semibold tracking-widest text-brand-goldDark uppercase block mb-1">
           Concept 02 — Fluid Momentum
         </span>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Concept 2: The Dynamic Flow
         </h2>
       </div>
 
-      <!-- Split Layout 50/50 -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-2 gap-8 lg:gap-12 items-center my-auto relative z-10 slide-concept-grid">
+      <!-- Split Layout: 1 col on mobile, 50/50 on desktop -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center my-auto py-3 md:py-0 relative z-10 slide-concept-grid">
         
         <!-- Left: Dual Application Frame (Light Primary & Dark VIP) -->
-        <div class="h-64 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-4 slide-dual-logo-grid">
+        <div class="h-56 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-3 sm:gap-4 slide-dual-logo-grid">
           
           <!-- Light Application -->
-          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-silver uppercase tracking-wider">
               <span>Primary</span>
               <span class="text-silver-light">Daylight</span>
@@ -312,7 +319,7 @@
           </div>
 
           <!-- Dark / VIP Application -->
-          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-brand-gold uppercase tracking-wider">
               <span>Reverse</span>
               <span class="text-slate-400">VIP / Nocturnal</span>
@@ -326,7 +333,7 @@
         </div>
 
         <!-- Right: Text Content with Silver Body -->
-        <div class="space-y-6">
+        <div class="space-y-4 sm:space-y-6">
           
           <div>
             <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider block mb-1">01 / Growth</span>
@@ -369,7 +376,7 @@
     <!-- SLIDE 5: Concept 3 – The Refined Woven Sphere -->
     <!-- (Pattern 12 Subtle Opacity: 0.07)          -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="5">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="5">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity (Enhanced UI/UX) -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -379,19 +386,19 @@
         <span class="text-xs font-semibold tracking-widest text-brand-goldDark uppercase block mb-1">
           Concept 03 — Calligraphic Heritage
         </span>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Concept 3: The Refined Woven Sphere
         </h2>
       </div>
 
-      <!-- Split Layout 50/50 -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-2 gap-8 lg:gap-12 items-center my-auto relative z-10 slide-concept-grid">
+      <!-- Split Layout: 1 col on mobile, 50/50 on desktop -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-12 items-center my-auto py-3 md:py-0 relative z-10 slide-concept-grid">
         
         <!-- Left: Dual Application Frame (Light Primary & Dark VIP) -->
-        <div class="h-64 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-4 slide-dual-logo-grid">
+        <div class="h-56 sm:h-72 md:h-80 w-full grid grid-cols-2 gap-3 sm:gap-4 slide-dual-logo-grid">
           
           <!-- Light Application -->
-          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-white rounded-2xl border border-silver-border flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-silver uppercase tracking-wider">
               <span>Primary</span>
               <span class="text-silver-light">Daylight</span>
@@ -403,7 +410,7 @@
           </div>
 
           <!-- Dark / VIP Application -->
-          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-5 relative shadow-card">
+          <div class="h-full bg-[#041133] rounded-2xl border border-slate-800 flex flex-col items-center justify-between p-3.5 sm:p-5 relative shadow-card">
             <div class="w-full flex items-center justify-between text-[10px] font-bold text-brand-gold uppercase tracking-wider">
               <span>Reverse</span>
               <span class="text-slate-400">VIP / Nocturnal</span>
@@ -417,7 +424,7 @@
         </div>
 
         <!-- Right: Text Content with Silver Body -->
-        <div class="space-y-6">
+        <div class="space-y-4 sm:space-y-6">
           
           <div>
             <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider block mb-1">01 / Refinement</span>
@@ -460,169 +467,169 @@
     <!-- SLIDE 6: Concept Comparison & Matrix       -->
     <!-- (Executive Scorecard & Strategic Choice)   -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="6">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-4 sm:px-10 md:px-16 py-4 sm:py-6 md:py-8 bg-white overflow-y-auto md:overflow-hidden" data-slide="6">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
 
       <!-- Slide Header -->
       <div class="w-full max-w-7xl mx-auto relative z-10">
-        <div class="flex items-center gap-2 mb-1">
+        <div class="flex items-center gap-2 mb-0.5 sm:mb-1">
           <span class="text-xs font-semibold tracking-widest text-brand-goldDark uppercase">Executive Decision Framework</span>
           <span class="text-silver-light">•</span>
           <span class="text-xs font-semibold tracking-widest text-silver uppercase">Strategic Scorecard</span>
         </div>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Concept Comparison & Evaluation Matrix
         </h2>
-        <p class="text-silver text-sm sm:text-base mt-1.5 max-w-4xl leading-relaxed">
+        <p class="text-silver text-xs sm:text-sm md:text-base mt-1 max-w-4xl leading-relaxed">
           Side-by-side performance appraisal across the Directorate's core directives: Awash heritage continuity, Sharia distinctiveness, production cost efficiency, and digital scalability.
         </p>
       </div>
 
-      <!-- 3-Column Comparative Scorecard Grid -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-3 gap-6 my-auto relative z-10 slide-directives-grid">
+      <!-- 3-Column Comparative Scorecard Grid (1 col on mobile, 3 cols on desktop) -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 my-auto py-3 md:py-0 relative z-10 slide-directives-grid">
         
         <!-- Concept 1 Card -->
-        <div class="bg-white rounded-xl p-6 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white rounded-xl p-4 sm:p-5 lg:p-6 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
             <!-- Top Identity Snippet -->
-            <div class="flex items-center justify-between pb-3 border-b border-silver-border mb-4">
+            <div class="flex items-center justify-between pb-2 sm:pb-3 border-b border-silver-border mb-2.5 sm:mb-3">
               <div>
                 <span class="text-[10px] font-bold text-silver uppercase tracking-wider block">Concept 01</span>
-                <h3 class="text-base font-bold text-brand-blue">Monolithic Archway</h3>
+                <h3 class="text-sm sm:text-base font-bold text-brand-blue">Monolithic Archway</h3>
               </div>
-              <div class="w-12 h-12 rounded-lg bg-silver-subtle border border-silver-border flex items-center justify-center p-1.5 flex-shrink-0">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-silver-subtle border border-silver-border flex items-center justify-center p-1 sm:p-1.5 flex-shrink-0">
                 <img src="Final Logo-12.svg" alt="Concept 1" class="w-full h-full object-contain">
               </div>
             </div>
 
             <!-- Scorecard Metrics -->
-            <div class="space-y-3 text-xs">
+            <div class="space-y-2 sm:space-y-2.5 text-xs">
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">20/80 Heritage Balance</span>
-                  <span class="font-bold text-slate-800">30% / 70%</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">20/80 Heritage Balance</span>
+                  <span class="font-bold text-slate-800 text-[11px] sm:text-xs">30% / 70%</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 75%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Heavy parent brand arch anchor</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Heavy parent brand arch anchor</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Sharia Distinctiveness</span>
-                  <span class="font-bold text-slate-700">Moderate</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Sharia Distinctiveness</span>
+                  <span class="font-bold text-slate-700 text-[11px] sm:text-xs">Moderate</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-silver-dark rounded-full" style="width: 60%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Architectural "Window" metaphor</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Architectural "Window" metaphor</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Production Cost Index</span>
-                  <span class="font-bold text-brand-blue">Lowest / Economical</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Production Cost Index</span>
+                  <span class="font-bold text-brand-blue text-[11px] sm:text-xs">Lowest / Economical</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 95%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Solid flat geometry, easiest 3D cut</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Solid flat geometry, easiest 3D cut</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Digital App Scalability</span>
-                  <span class="font-bold text-slate-800">High</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Digital App Scalability</span>
+                  <span class="font-bold text-slate-800 text-[11px] sm:text-xs">High</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 85%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Clear favicon & 16px rendering</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Clear favicon & 16px rendering</span>
               </div>
             </div>
           </div>
 
           <!-- Bottom Evaluation Verdict -->
-          <div class="mt-4 pt-3 border-t border-silver-border bg-silver-subtle/50 p-2.5 rounded-lg text-center">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-silver block">Evaluation Verdict</span>
+          <div class="mt-2.5 sm:mt-3 pt-2 sm:pt-2.5 border-t border-silver-border bg-silver-subtle/50 p-2 sm:p-2.5 rounded-lg text-center">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-silver block">Evaluation Verdict</span>
             <span class="text-xs font-bold text-brand-blue">Solid Institutional Fallback</span>
           </div>
         </div>
 
         <!-- Concept 2 Card -->
-        <div class="bg-white rounded-xl p-6 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white rounded-xl p-4 sm:p-5 lg:p-6 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
             <!-- Top Identity Snippet -->
-            <div class="flex items-center justify-between pb-3 border-b border-silver-border mb-4">
+            <div class="flex items-center justify-between pb-2 sm:pb-3 border-b border-silver-border mb-2.5 sm:mb-3">
               <div>
                 <span class="text-[10px] font-bold text-silver uppercase tracking-wider block">Concept 02</span>
-                <h3 class="text-base font-bold text-brand-blue">The Dynamic Flow</h3>
+                <h3 class="text-sm sm:text-base font-bold text-brand-blue">The Dynamic Flow</h3>
               </div>
-              <div class="w-12 h-12 rounded-lg bg-silver-subtle border border-silver-border flex items-center justify-center p-1.5 flex-shrink-0">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-silver-subtle border border-silver-border flex items-center justify-center p-1 sm:p-1.5 flex-shrink-0">
                 <img src="Final Logo-14.svg" alt="Concept 2" class="w-full h-full object-contain">
               </div>
             </div>
 
             <!-- Scorecard Metrics -->
-            <div class="space-y-3 text-xs">
+            <div class="space-y-2 sm:space-y-2.5 text-xs">
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">20/80 Heritage Balance</span>
-                  <span class="font-bold text-slate-800">15% / 85%</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">20/80 Heritage Balance</span>
+                  <span class="font-bold text-slate-800 text-[11px] sm:text-xs">15% / 85%</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 65%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">High departure into ascending waves</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">High departure into ascending waves</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Sharia Distinctiveness</span>
-                  <span class="font-bold text-slate-800">High</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Sharia Distinctiveness</span>
+                  <span class="font-bold text-slate-800 text-[11px] sm:text-xs">High</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-goldDark rounded-full" style="width: 80%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Ascending gold Sharia core</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Ascending gold Sharia core</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Production Cost Index</span>
-                  <span class="font-bold text-slate-700">Moderate–High</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Production Cost Index</span>
+                  <span class="font-bold text-slate-700 text-[11px] sm:text-xs">Moderate–High</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-slate-400 rounded-full" style="width: 60%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Tighter CNC contours on 3D letters</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Tighter CNC contours on 3D letters</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-silver font-medium">Digital App Scalability</span>
-                  <span class="font-bold text-slate-700">Moderate</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-silver font-medium text-[11px] sm:text-xs">Digital App Scalability</span>
+                  <span class="font-bold text-slate-700 text-[11px] sm:text-xs">Moderate</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-slate-400 rounded-full" style="width: 70%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-light mt-0.5 block">Requires minimum stroke width</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-light mt-0.5 block">Requires minimum stroke width</span>
               </div>
             </div>
           </div>
 
           <!-- Bottom Evaluation Verdict -->
-          <div class="mt-4 pt-3 border-t border-silver-border bg-silver-subtle/50 p-2.5 rounded-lg text-center">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-silver block">Evaluation Verdict</span>
+          <div class="mt-2.5 sm:mt-3 pt-2 sm:pt-2.5 border-t border-silver-border bg-silver-subtle/50 p-2 sm:p-2.5 rounded-lg text-center">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-silver block">Evaluation Verdict</span>
             <span class="text-xs font-bold text-brand-blue">Progressive Kinetic Option</span>
           </div>
         </div>
 
         <!-- Concept 3 Card (RECOMMENDED / HIGHLIGHTED) -->
-        <div class="bg-white rounded-xl p-6 border-2 border-brand-gold shadow-card-elevated flex flex-col justify-between relative overflow-hidden">
+        <div class="bg-white rounded-xl p-4 sm:p-5 lg:p-6 border-2 border-brand-gold shadow-card-elevated flex flex-col justify-between relative overflow-hidden">
           
           <!-- Recommendation Top Ribbon -->
           <div class="absolute top-0 right-0 bg-brand-gold text-[#041133] text-[9px] font-extrabold uppercase px-3 py-0.5 rounded-bl tracking-widest font-mono">
@@ -631,70 +638,70 @@
 
           <div>
             <!-- Top Identity Snippet -->
-            <div class="flex items-center justify-between pb-3 border-b border-silver-border mb-4">
+            <div class="flex items-center justify-between pb-2 sm:pb-3 border-b border-silver-border mb-2.5 sm:mb-3">
               <div>
                 <div class="flex items-center gap-1.5">
                   <span class="text-[10px] font-bold text-brand-goldDark uppercase tracking-wider">Concept 03</span>
                   <span class="text-[9px] font-extrabold text-brand-blue bg-blue-50 px-1.5 py-0.5 rounded">96% Score</span>
                 </div>
-                <h3 class="text-base font-extrabold text-brand-blue">Refined Woven Sphere</h3>
+                <h3 class="text-sm sm:text-base font-extrabold text-brand-blue">Refined Woven Sphere</h3>
               </div>
-              <div class="w-12 h-12 rounded-lg bg-amber-50/60 border border-brand-gold/40 flex items-center justify-center p-1 flex-shrink-0">
+              <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-lg bg-amber-50/60 border border-brand-gold/40 flex items-center justify-center p-1 sm:p-1 flex-shrink-0">
                 <img src="Final Logo-13.svg" alt="Concept 3" class="w-full h-full object-contain">
               </div>
             </div>
 
             <!-- Scorecard Metrics -->
-            <div class="space-y-3 text-xs">
+            <div class="space-y-2 sm:space-y-2.5 text-xs">
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-slate-900 font-semibold">20/80 Heritage Balance</span>
-                  <span class="font-extrabold text-brand-goldDark">20% / 80% (Optimal)</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-slate-900 font-semibold text-[11px] sm:text-xs">20/80 Heritage Balance</span>
+                  <span class="font-extrabold text-brand-goldDark text-[11px] sm:text-xs">20% / 80% (Optimal)</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-gold rounded-full" style="width: 100%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-dark mt-0.5 block">Awash globe silhouette + fresh interior</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-dark mt-0.5 block">Awash globe silhouette + fresh interior</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-slate-900 font-semibold">Sharia Distinctiveness</span>
-                  <span class="font-extrabold text-brand-goldDark">Exceptional / Highest</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-slate-900 font-semibold text-[11px] sm:text-xs">Sharia Distinctiveness</span>
+                  <span class="font-extrabold text-brand-goldDark text-[11px] sm:text-xs">Exceptional / Highest</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-gold rounded-full" style="width: 98%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-dark mt-0.5 block">Arabic "Ikhlas" (إخلاص) monogram</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-dark mt-0.5 block">Arabic "Ikhlas" (إخلاص) monogram</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-slate-900 font-semibold">Production Cost Index</span>
-                  <span class="font-extrabold text-brand-blue">Cost-Effective</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-slate-900 font-semibold text-[11px] sm:text-xs">Production Cost Index</span>
+                  <span class="font-extrabold text-brand-blue text-[11px] sm:text-xs">Cost-Effective</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 88%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-dark mt-0.5 block">Optimized channel letters & gold stamping</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-dark mt-0.5 block">Optimized channel letters & gold stamping</span>
               </div>
 
               <div>
-                <div class="flex justify-between items-center mb-1">
-                  <span class="text-slate-900 font-semibold">Digital App Scalability</span>
-                  <span class="font-extrabold text-brand-blue">Superior</span>
+                <div class="flex justify-between items-center mb-0.5 sm:mb-1">
+                  <span class="text-slate-900 font-semibold text-[11px] sm:text-xs">Digital App Scalability</span>
+                  <span class="font-extrabold text-brand-blue text-[11px] sm:text-xs">Superior</span>
                 </div>
-                <div class="w-full h-1.5 bg-silver-subtle rounded-full overflow-hidden">
+                <div class="w-full h-1 sm:h-1.5 bg-silver-subtle rounded-full overflow-hidden">
                   <div class="h-full bg-brand-blue rounded-full" style="width: 95%;"></div>
                 </div>
-                <span class="text-[10px] text-silver-dark mt-0.5 block">Native circular app icon & retina clarity</span>
+                <span class="text-[9px] sm:text-[10px] text-silver-dark mt-0.5 block">Native circular app icon & retina clarity</span>
               </div>
             </div>
           </div>
 
           <!-- Bottom Evaluation Verdict -->
-          <div class="mt-4 pt-3 border-t border-brand-gold/40 bg-amber-50/50 p-2.5 rounded-lg text-center">
-            <span class="text-[10px] font-bold uppercase tracking-wider text-brand-goldDark block">Directorate Selection</span>
+          <div class="mt-2.5 sm:mt-3 pt-2 sm:pt-2.5 border-t border-brand-gold/40 bg-amber-50/50 p-2 sm:p-2.5 rounded-lg text-center">
+            <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-brand-goldDark block">Directorate Selection</span>
             <span class="text-xs font-extrabold text-brand-blue">Endorsed Phase 2 Direction</span>
           </div>
         </div>
@@ -702,7 +709,7 @@
       </div>
 
       <!-- Footer Info -->
-      <div class="w-full max-w-7xl mx-auto flex items-center justify-between text-xs text-silver-light border-t border-silver-border pt-4 relative z-10">
+      <div class="w-full max-w-7xl mx-auto flex items-center justify-between text-xs text-silver-light border-t border-silver-border pt-2.5 sm:pt-4 relative z-10">
         <span>Strategic alignment framework ratified against Ethiopian Islamic banking standards</span>
         <span>Slide 06 / 10</span>
       </div>
@@ -714,7 +721,7 @@
     <!-- SLIDE 7: Dedicated Color Architecture Page -->
     <!-- (Pattern 12 Added + Enhanced UI/UX)        -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="7">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-6 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="7">
       
       <!-- Pattern 12 Background Layer (Added as requested with 0.07 opacity) -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -722,39 +729,39 @@
       <!-- Top Meta Line matching Colours Cafe -->
       <div class="w-full max-w-7xl mx-auto flex items-center justify-between relative z-10">
         <div class="flex items-center gap-2">
-          <span class="text-2xl font-black text-brand-blue">07</span>
+          <span class="text-xl sm:text-2xl font-black text-brand-blue">07</span>
           <span class="text-silver-light">/</span>
           <span class="text-xs font-bold tracking-widest text-brand-goldDark uppercase">Brand Color Palette</span>
         </div>
-        <span class="text-xs font-bold tracking-widest text-silver-dark uppercase">Colours Cafe • Master Standards</span>
+        <span class="text-[10px] sm:text-xs font-bold tracking-widest text-silver-dark uppercase">Colours Cafe • Master Standards</span>
       </div>
 
       <!-- Main Content Block -->
       <div class="w-full max-w-7xl mx-auto my-auto py-2 relative z-10">
-        <div class="mb-5">
-          <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight mb-2">
+        <div class="mb-4 sm:mb-5">
+          <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight mb-1 sm:mb-2">
             Color Architecture
           </h2>
-          <p class="text-silver text-sm sm:text-base max-w-4xl leading-relaxed">
+          <p class="text-silver text-xs sm:text-sm md:text-base max-w-4xl leading-relaxed">
             Bridging the corporate palette: starting from institutional Deep Indigo and Royal Blue, transitioning through neutral Sand, to warm Amber and vital Awash Orange.
           </p>
         </div>
 
-        <!-- 5 Vertical Color Bands (Enhanced UI/UX: Blue to Orange) -->
-        <div class="w-full h-80 sm:h-96 md:h-[400px] rounded-2xl overflow-hidden grid grid-cols-5 border border-silver-border shadow-card slide-color-palette">
+        <!-- 5 Color Bands (Horizontal on mobile, 5 Vertical Pillars on desktop) -->
+        <div class="w-full h-auto sm:h-96 md:h-[400px] rounded-2xl overflow-hidden grid grid-cols-1 sm:grid-cols-5 border border-silver-border shadow-card slide-color-palette divide-y sm:divide-y-0 sm:divide-x divide-white/20">
           
           <!-- Stripe 1: Deep Blue (HEX: 2329A8) -->
-          <div class="h-full bg-[#2329A8] text-white p-4 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
-            <div class="space-y-3 pb-2">
-              <div>
+          <div class="bg-[#2329A8] text-white p-3.5 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
+            <div class="flex flex-row sm:flex-col justify-between sm:justify-end items-center sm:space-y-3 sm:pb-2 w-full">
+              <div class="text-left sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">HEX</span>
                 <span class="text-xs sm:text-sm md:text-base font-bold font-mono">2329A8</span>
               </div>
-              <div>
+              <div class="text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">RGB</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono">35, 41, 168</span>
               </div>
-              <div>
+              <div class="text-right sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">CMYK</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono">79, 76, 0, 34</span>
               </div>
@@ -762,17 +769,17 @@
           </div>
 
           <!-- Stripe 2: Bright Royal Blue (HEX: 355CF5) -->
-          <div class="h-full bg-[#355CF5] text-white p-4 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
-            <div class="space-y-3 pb-2">
-              <div>
+          <div class="bg-[#355CF5] text-white p-3.5 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
+            <div class="flex flex-row sm:flex-col justify-between sm:justify-end items-center sm:space-y-3 sm:pb-2 w-full">
+              <div class="text-left sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">HEX</span>
                 <span class="text-xs sm:text-sm md:text-base font-bold font-mono">355CF5</span>
               </div>
-              <div>
+              <div class="text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">RGB</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono">53, 92, 245</span>
               </div>
-              <div>
+              <div class="text-right sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold uppercase opacity-75 block mb-0.5">CMYK</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono">78, 62, 0, 4</span>
               </div>
@@ -780,17 +787,17 @@
           </div>
 
           <!-- Stripe 3: Off-White / Sand (HEX: F2E7E1) -->
-          <div class="h-full bg-[#F2E7E1] text-slate-800 p-4 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
-            <div class="space-y-3 pb-2">
-              <div>
+          <div class="bg-[#F2E7E1] text-slate-800 p-3.5 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
+            <div class="flex flex-row sm:flex-col justify-between sm:justify-end items-center sm:space-y-3 sm:pb-2 w-full">
+              <div class="text-left sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-500 uppercase block mb-0.5">HEX</span>
                 <span class="text-xs sm:text-sm md:text-base font-bold font-mono text-slate-900">F2E7E1</span>
               </div>
-              <div>
+              <div class="text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-500 uppercase block mb-0.5">RGB</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-800">242, 231, 225</span>
               </div>
-              <div>
+              <div class="text-right sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-500 uppercase block mb-0.5">CMYK</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-800">0, 5, 7, 5</span>
               </div>
@@ -798,17 +805,17 @@
           </div>
 
           <!-- Stripe 4: Amber / Warm Gold (HEX: FF9B29) -->
-          <div class="h-full bg-[#FF9B29] text-slate-950 p-4 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
-            <div class="space-y-3 pb-2">
-              <div>
+          <div class="bg-[#FF9B29] text-slate-950 p-3.5 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
+            <div class="flex flex-row sm:flex-col justify-between sm:justify-end items-center sm:space-y-3 sm:pb-2 w-full">
+              <div class="text-left sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-700 uppercase block mb-0.5">HEX</span>
                 <span class="text-xs sm:text-sm md:text-base font-bold font-mono text-slate-950">FF9B29</span>
               </div>
-              <div>
+              <div class="text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-700 uppercase block mb-0.5">RGB</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-900">255, 155, 41</span>
               </div>
-              <div>
+              <div class="text-right sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-700 uppercase block mb-0.5">CMYK</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-900">0, 39, 84, 0</span>
               </div>
@@ -816,17 +823,17 @@
           </div>
 
           <!-- Stripe 5: Vivid Orange (HEX: FF6624) -->
-          <div class="h-full bg-[#FF6624] text-slate-950 p-4 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
-            <div class="space-y-3 pb-2">
-              <div>
+          <div class="bg-[#FF6624] text-slate-950 p-3.5 sm:p-6 flex flex-col justify-end text-center transition-all duration-200 hover:brightness-105">
+            <div class="flex flex-row sm:flex-col justify-between sm:justify-end items-center sm:space-y-3 sm:pb-2 w-full">
+              <div class="text-left sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-800 uppercase block mb-0.5">HEX</span>
                 <span class="text-xs sm:text-sm md:text-base font-bold font-mono text-slate-950">FF6624</span>
               </div>
-              <div>
+              <div class="text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-800 uppercase block mb-0.5">RGB</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-900">255, 102, 36</span>
               </div>
-              <div>
+              <div class="text-right sm:text-center">
                 <span class="text-[9px] sm:text-[10px] tracking-widest font-semibold text-slate-800 uppercase block mb-0.5">CMYK</span>
                 <span class="text-[10px] sm:text-xs font-semibold font-mono text-slate-900">0, 60, 86, 0</span>
               </div>
@@ -849,7 +856,7 @@
     <!-- SLIDE 8: Bilingual Typography Page         -->
     <!-- (Acumin Variable Concept + Nyala Ethiopic) -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="8">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-4 sm:px-12 md:px-20 py-4 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="8">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -861,36 +868,36 @@
           <span class="text-silver-light">•</span>
           <span class="text-xs font-semibold tracking-widest text-silver uppercase">Bilingual Typography</span>
         </div>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Bilingual Modern Typography
         </h2>
-        <p class="text-silver text-sm sm:text-base mt-1.5 max-w-4xl leading-relaxed">
+        <p class="text-silver text-xs sm:text-sm md:text-base mt-1.5 max-w-4xl leading-relaxed">
           Standardized on <strong>Acumin Variable Concept</strong> (Latin) and <strong>Nyala Ethiopic</strong> (Ge'ez): engineered for complete parity across international corporate communication and domestic Ethiopian banking touchpoints.
         </p>
       </div>
 
-      <!-- Typography Specimen Grid (50/50 Latin & Ethiopic) -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-2 gap-8 items-stretch my-auto relative z-10 slide-typography-grid">
+      <!-- Typography Specimen Grid (1 col on mobile, 50/50 Latin & Ethiopic on desktop) -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-8 items-stretch my-auto py-3 md:py-0 relative z-10 slide-typography-grid">
         
         <!-- Left: Latin Typographic System (English) -->
-        <div class="bg-white rounded-xl p-7 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white rounded-xl p-4 sm:p-7 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-1">
               <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider">01 / Latin Standard</span>
               <span class="text-[10px] font-mono text-silver uppercase tracking-widest">Global & Digital</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-black text-brand-blue mb-1">Acumin Variable Concept</h3>
+            <h3 class="text-lg sm:text-2xl font-black text-brand-blue mb-1">Acumin Variable Concept</h3>
             <p class="text-silver text-xs leading-relaxed mb-4">
               Neo-grotesque sans-serif designed by Robert Slimbach. Engineered for high-clarity headlines, digital app interfaces, and executive stationery.
             </p>
 
             <!-- Latin Wordmark Box -->
-            <div class="bg-silver-subtle p-5 rounded-lg border border-silver-border mb-4">
+            <div class="bg-silver-subtle p-3.5 sm:p-5 rounded-lg border border-silver-border mb-4">
               <span class="text-[9px] uppercase font-bold text-silver-light tracking-wider block mb-1">Primary Latin Wordmark</span>
-              <div class="text-2xl sm:text-3xl font-black text-brand-blue tracking-tight">
+              <div class="text-xl sm:text-3xl font-black text-brand-blue tracking-tight">
                 Awash Ikhlas Bank
               </div>
-              <div class="text-xs text-silver mt-0.5 font-medium">Interest-Free Banking Directorate</div>
+              <div class="text-[11px] sm:text-xs text-silver mt-0.5 font-medium">Interest-Free Banking Directorate</div>
             </div>
           </div>
 
@@ -915,24 +922,24 @@
         </div>
 
         <!-- Right: Ethiopic Typographic System (Amharic / አማርኛ) -->
-        <div class="bg-white rounded-xl p-7 border border-silver-border shadow-card flex flex-col justify-between">
+        <div class="bg-white rounded-xl p-4 sm:p-7 border border-silver-border shadow-card flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between mb-1">
               <span class="text-xs font-bold text-brand-goldDark uppercase tracking-wider">02 / Ethiopic Standard</span>
               <span class="text-[10px] font-mono text-silver uppercase tracking-widest">National & Retail</span>
             </div>
-            <h3 class="text-xl sm:text-2xl font-black text-brand-blue mb-1 font-ethiopic">Nyala • የኢትዮጵያ ፊደል</h3>
+            <h3 class="text-lg sm:text-2xl font-black text-brand-blue mb-1 font-ethiopic">Nyala • የኢትዮጵያ ፊደል</h3>
             <p class="text-silver text-xs leading-relaxed mb-4">
               The premier Ethiopian typographic standard. Crafted for optimum legibility across passbooks, official legal documents, and branch counter reception.
             </p>
 
             <!-- Amharic Wordmark Box -->
-            <div class="bg-silver-subtle p-5 rounded-lg border border-silver-border mb-4">
+            <div class="bg-silver-subtle p-3.5 sm:p-5 rounded-lg border border-silver-border mb-4">
               <span class="text-[9px] uppercase font-bold text-silver-light tracking-wider block mb-1">Primary Ethiopic Wordmark</span>
-              <div class="text-2xl sm:text-3xl font-black text-brand-blue tracking-normal font-ethiopic">
+              <div class="text-xl sm:text-3xl font-black text-brand-blue tracking-normal font-ethiopic">
                 አዋሽ ኢኽላስ ባንክ
               </div>
-              <div class="text-xs text-silver mt-0.5 font-medium font-ethiopic">ከወለድ ነፃ የባንክ አገልግሎት ዳይሬክቶሬት</div>
+              <div class="text-[11px] sm:text-xs text-silver mt-0.5 font-medium font-ethiopic">ከወለድ ነፃ የባንክ አገልግሎት ዳይሬክቶሬት</div>
             </div>
           </div>
 
@@ -971,7 +978,7 @@
     <!-- SLIDE 9: Practical Application             -->
     <!-- (Enhanced with Real Mockup Images)         -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-white overflow-hidden" data-slide="9">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-4 sm:px-12 md:px-20 py-4 sm:py-8 md:py-10 bg-white overflow-y-auto md:overflow-hidden" data-slide="9">
       
       <!-- Pattern 12 Background Layer with Decreased Opacity (0.07) -->
       <img src="Presentation-12.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-[0.07]" alt="Subtle Wave Pattern">
@@ -983,16 +990,16 @@
           <span class="text-silver-light">•</span>
           <span class="text-xs font-semibold tracking-widest text-silver uppercase">Touchpoint Validation</span>
         </div>
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-brand-blue tracking-tight">
           Engineered for Versatility
         </h2>
-        <p class="text-silver text-sm sm:text-base mt-1.5 max-w-4xl leading-relaxed">
+        <p class="text-silver text-xs sm:text-sm md:text-base mt-1.5 max-w-4xl leading-relaxed">
           A modern logo must perform flawlessly in every environment. Every revised mark presented today has been rigorously stress-tested across key physical, digital, and print mediums:
         </p>
       </div>
 
-      <!-- 4 Photographic Mockup Showcase Cards from OP4 (Fixed 4 Columns) -->
-      <div class="w-full max-w-7xl mx-auto grid grid-cols-4 gap-4 lg:gap-5 my-auto relative z-10 slide-mockup-grid">
+      <!-- 4 Photographic Mockup Showcase Cards (1 col mobile, 2 cols tablet, 4 cols desktop) -->
+      <div class="w-full max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 lg:gap-5 my-auto py-3 md:py-0 relative z-10 slide-mockup-grid">
         
         <!-- Touchpoint 01: Physical 3D Signage (IT Company Office Wall Logo Mock-up.jpg) -->
         <div class="bg-white rounded-xl border border-silver-border shadow-card overflow-hidden flex flex-col group hover:shadow-card-elevated transition-shadow duration-300">
@@ -1085,7 +1092,7 @@
     <!-- SLIDE 10: Closing & Next Steps             -->
     <!-- (Pattern 11 Deep Navy Enhanced UI/UX)      -->
     <!-- ========================================== -->
-    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-10 sm:px-16 md:px-20 py-8 md:py-10 bg-[#041133] overflow-hidden" data-slide="10">
+    <section class="slide-item absolute inset-0 w-full h-full flex flex-col justify-between px-4 sm:px-12 md:px-20 py-6 sm:py-8 md:py-10 bg-[#041133] overflow-y-auto md:overflow-hidden" data-slide="10">
       
       <!-- Pattern 11 Background Layer -->
       <img src="Presentation-11.svg" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none z-0 opacity-75" alt="Wave Pattern">
@@ -1095,40 +1102,40 @@
         <span class="text-xs font-semibold tracking-widest text-brand-gold uppercase block mb-1">
           Executive Next Steps
         </span>
-        <h2 class="text-3xl sm:text-5xl font-extrabold text-white tracking-tight">
+        <h2 class="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight">
           Moving Forward
         </h2>
       </div>
 
       <!-- Center Main Paragraphs - PURE SILVER / SLATE (NOT BLUE) -->
-      <div class="w-full max-w-5xl mx-auto my-auto text-left space-y-6 relative z-10">
+      <div class="w-full max-w-5xl mx-auto my-auto text-left space-y-4 sm:space-y-6 py-3 md:py-0 relative z-10">
         
-        <p class="text-xl sm:text-2xl md:text-3xl font-medium text-slate-300 leading-relaxed">
+        <p class="text-lg sm:text-2xl md:text-3xl font-medium text-slate-300 leading-relaxed">
           Thank you for your continued collaboration. We believe these three distinct, refined concepts successfully bridge the trusted legacy of <strong class="text-white font-bold">Awash Bank</strong> with the innovative, modern future of the <strong class="text-white font-bold">Ikhlas IFB initiative</strong>.
         </p>
 
-        <p class="text-base sm:text-lg text-slate-400 leading-relaxed">
+        <p class="text-xs sm:text-base md:text-lg text-slate-400 leading-relaxed">
           We look forward to your thoughts on this new creative direction to finalize the Awash Ikhlas identity.
         </p>
 
-        <!-- Clean Architectural 3-Stage Roadmap (Fixed 3 Columns) -->
-        <div class="grid grid-cols-3 gap-6 pt-6 border-t border-slate-800 slide-directives-grid">
+        <!-- Clean Architectural 3-Stage Roadmap (1 col mobile, 3 cols desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 pt-4 sm:pt-6 border-t border-slate-800 slide-directives-grid">
           
-          <div class="bg-slate-900/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
+          <div class="bg-slate-900/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
             <span class="text-xs font-bold text-brand-gold uppercase tracking-wider block mb-1">Stage 01</span>
-            <h3 class="text-base font-bold text-white mb-1">Directorate Selection</h3>
+            <h3 class="text-sm sm:text-base font-bold text-white mb-1">Directorate Selection</h3>
             <p class="text-xs text-slate-400 leading-relaxed">Feedback collation & concept ratification</p>
           </div>
 
-          <div class="bg-slate-900/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
+          <div class="bg-slate-900/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
             <span class="text-xs font-bold text-brand-gold uppercase tracking-wider block mb-1">Stage 02</span>
-            <h3 class="text-base font-bold text-white mb-1">Brand Guidelines</h3>
+            <h3 class="text-sm sm:text-base font-bold text-white mb-1">Brand Guidelines</h3>
             <p class="text-xs text-slate-400 leading-relaxed">Comprehensive manual & vector master files</p>
           </div>
 
-          <div class="bg-slate-900/80 backdrop-blur-sm p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
+          <div class="bg-slate-900/80 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-slate-700/80 hover:border-brand-gold/60 transition-colors">
             <span class="text-xs font-bold text-brand-gold uppercase tracking-wider block mb-1">Stage 03</span>
-            <h3 class="text-base font-bold text-white mb-1">Touchpoint Rollout</h3>
+            <h3 class="text-sm sm:text-base font-bold text-white mb-1">Touchpoint Rollout</h3>
             <p class="text-xs text-slate-400 leading-relaxed">Branch signage pilot & digital deployment</p>
           </div>
 
@@ -1159,21 +1166,21 @@
   <!-- ======================================================== -->
   <!-- Bottom Minimalist Navigation Bar                         -->
   <!-- ======================================================== -->
-  <footer id="mainFooter" class="w-full h-16 bg-white border-t border-silver-border px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0">
+  <footer id="mainFooter" class="w-full h-14 sm:h-16 bg-white border-t border-silver-border px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0">
     
     <!-- Prev / Next Buttons -->
-    <div class="flex items-center gap-3">
-      <button id="prevBtn" class="px-4 py-2 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none">
+    <div class="flex items-center gap-2 sm:gap-3">
+      <button id="prevBtn" class="px-3 sm:px-4 py-1.5 sm:py-2 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none">
         Previous
       </button>
 
-      <button id="nextBtn" class="px-5 py-2 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-semibold">
+      <button id="nextBtn" class="px-3.5 sm:px-5 py-1.5 sm:py-2 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-semibold">
         Next Slide
       </button>
     </div>
 
-    <!-- Center: 10 Flat Dots -->
-    <div class="flex items-center gap-2" id="dotsContainer">
+    <!-- Center: 10 Flat Dots (Hidden on mobile portrait to avoid crowding) -->
+    <div class="hidden md:flex items-center gap-2" id="dotsContainer">
       <!-- Injected by JavaScript -->
     </div>
 
@@ -1185,6 +1192,200 @@
     </div>
 
   </footer>
+
+
+  <!-- ======================================================== -->
+  <!-- Slide Overview Grid Modal (Press G)                       -->
+  <!-- ======================================================== -->
+  <div id="overviewModal" class="fixed inset-0 z-50 bg-[#041133]/90 backdrop-blur-md flex flex-col justify-between p-4 sm:p-8 md:p-10 opacity-0 pointer-events-none transition-all duration-200">
+    
+    <!-- Modal Top Bar -->
+    <div class="w-full max-w-6xl mx-auto flex items-center justify-between text-white pb-3 sm:pb-4 border-b border-slate-700/80 flex-shrink-0">
+      <div class="flex items-center gap-3">
+        <div class="w-2.5 h-2.5 rounded-full bg-brand-gold"></div>
+        <div>
+          <h2 class="text-base sm:text-lg font-bold tracking-tight text-white flex items-center gap-2">
+            <span>Slide Overview & Navigator</span>
+            <span class="text-xs font-mono font-normal text-slate-400 bg-slate-800 px-2 py-0.5 rounded border border-slate-700">10 Slides</span>
+          </h2>
+        </div>
+      </div>
+      <div class="flex items-center gap-3 text-xs text-slate-300">
+        <span class="hidden sm:inline text-slate-400">Jump: Click card or press <kbd class="px-1.5 py-0.5 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono text-[11px]">1-9</kbd>, close: <kbd class="px-1.5 py-0.5 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono text-[11px]">Esc</kbd> / <kbd class="px-1.5 py-0.5 bg-slate-800 text-slate-200 rounded border border-slate-700 font-mono text-[11px]">G</kbd></span>
+        <button id="closeOverviewBtn" aria-label="Close Overview Modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- 10-Slide Interactive Grid (2 rows of 5 on desktop) -->
+    <div class="w-full max-w-6xl mx-auto my-auto grid grid-cols-2 sm:grid-cols-5 gap-3 sm:gap-4 py-3 sm:py-5 overflow-y-auto" id="overviewGrid">
+      
+      <!-- Slide 01 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-gold focus:outline-none" data-slide-index="0">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-brand-gold">01</span>
+          <span class="text-[9px] font-mono text-slate-400 uppercase tracking-wider">Title</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Awash Ikhlas</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">Phase 2 Strategic Execution</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-gold/60 w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 02 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="1">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">02</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Foundation</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Strategic Response</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">3 Core Directives Ratified</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 03 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="2">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">03</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Concept 01</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Monolithic Archway</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">30/70 Heritage Architectural</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 04 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="3">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">04</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Concept 02</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">The Dynamic Flow</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">15/85 Kinetic Momentum</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 05 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-gold focus:outline-none relative overflow-hidden" data-slide-index="4">
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center gap-1.5">
+            <span class="text-[11px] font-mono font-bold text-brand-gold">05</span>
+            <span class="text-[8px] font-mono font-bold text-[#041133] bg-brand-gold px-1 rounded uppercase">Primary</span>
+          </div>
+          <span class="text-[9px] font-mono text-slate-400 uppercase tracking-wider">Concept 03</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-brand-gold group-hover:text-white transition-colors truncate">Refined Woven Sphere</h3>
+          <p class="text-[11px] text-slate-300 truncate mt-0.5">20/80 Target + Ikhlas Monogram</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-gold w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 06 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-gold focus:outline-none relative overflow-hidden" data-slide-index="5">
+        <div class="flex items-center justify-between w-full">
+          <div class="flex items-center gap-1.5">
+            <span class="text-[11px] font-mono font-bold text-brand-gold">06</span>
+            <span class="text-[8px] font-mono font-bold text-white bg-brand-blue px-1 rounded uppercase">96% Score</span>
+          </div>
+          <span class="text-[9px] font-mono text-slate-400 uppercase tracking-wider">Scorecard</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Evaluation Matrix</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">Side-by-Side Appraisal</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-gold w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 07 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="6">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">07</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Colors</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Color Architecture</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">Deep Blue to Orange Spectrum</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 08 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="7">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">08</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Type</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Bilingual Typography</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">Acumin Variable & Nyala Ethiopic</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 09 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-blue focus:outline-none" data-slide-index="8">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-slate-400">09</span>
+          <span class="text-[9px] font-mono text-slate-500 uppercase tracking-wider">Mockups</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Practical Application</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">3D Signage, ATM, Passbook & Print</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-blue w-full"></div>
+        </div>
+      </button>
+
+      <!-- Slide 10 Card -->
+      <button type="button" class="overview-card bg-slate-900/90 hover:bg-slate-800 border border-slate-700 rounded-xl p-3 sm:p-4 text-left transition-all duration-200 group flex flex-col justify-between h-28 sm:h-32 hover:border-brand-gold focus:outline-none" data-slide-index="9">
+        <div class="flex items-center justify-between w-full">
+          <span class="text-[11px] font-mono font-bold text-brand-gold">10</span>
+          <span class="text-[9px] font-mono text-slate-400 uppercase tracking-wider">Closing</span>
+        </div>
+        <div>
+          <h3 class="text-xs sm:text-sm font-bold text-white group-hover:text-brand-gold transition-colors truncate">Moving Forward</h3>
+          <p class="text-[11px] text-slate-400 truncate mt-0.5">3-Stage Delivery Roadmap</p>
+        </div>
+        <div class="w-full h-1 bg-slate-800 rounded-full overflow-hidden">
+          <div class="h-full bg-brand-gold/60 w-full"></div>
+        </div>
+      </button>
+
+    </div>
+
+    <!-- Modal Bottom Bar -->
+    <div class="w-full max-w-6xl mx-auto pt-3 border-t border-slate-700/80 flex items-center justify-between text-xs text-slate-400 font-mono flex-shrink-0">
+      <span>Awash Bank IFB • Directorate Master Deck</span>
+      <span class="text-slate-400">Design Plus Creative Partner</span>
+    </div>
+
+  </div>
 
 
   <!-- ======================================================== -->
@@ -1206,6 +1407,10 @@
       const dotsContainer = document.getElementById('dotsContainer');
       const fullscreenBtn = document.getElementById('fullscreenBtn');
       const printPdfBtn = document.getElementById('printPdfBtn');
+      const overviewBtn = document.getElementById('overviewBtn');
+      const overviewModal = document.getElementById('overviewModal');
+      const closeOverviewBtn = document.getElementById('closeOverviewBtn');
+      const overviewCards = document.querySelectorAll('.overview-card');
       const mainHeader = document.getElementById('mainHeader');
       const mainFooter = document.getElementById('mainFooter');
       const brandNameText = document.getElementById('brandNameText');
@@ -1224,6 +1429,34 @@
           dot.addEventListener('click', () => goToSlide(idx));
           dotsContainer.appendChild(dot);
         });
+      }
+
+      function openOverviewModal() {
+        if (!overviewModal) return;
+        overviewModal.classList.remove('opacity-0', 'pointer-events-none');
+        overviewModal.classList.add('opacity-100', 'pointer-events-auto');
+        overviewCards.forEach((card, idx) => {
+          if (idx === currentIndex) {
+            card.classList.add('ring-2', 'ring-brand-gold', 'border-brand-gold', 'bg-slate-800');
+          } else {
+            card.classList.remove('ring-2', 'ring-brand-gold', 'border-brand-gold', 'bg-slate-800');
+          }
+        });
+      }
+
+      function closeOverviewModal() {
+        if (!overviewModal) return;
+        overviewModal.classList.remove('opacity-100', 'pointer-events-auto');
+        overviewModal.classList.add('opacity-0', 'pointer-events-none');
+      }
+
+      function toggleOverviewModal() {
+        if (!overviewModal) return;
+        if (overviewModal.classList.contains('opacity-100')) {
+          closeOverviewModal();
+        } else {
+          openOverviewModal();
+        }
       }
 
       function updateSlide(index) {
@@ -1258,24 +1491,26 @@
         // Adaptive chrome theming for dark slides (Slide 1 and Slide 10)
         const isDarkSlide = (currentIndex === 0 || currentIndex === totalSlides - 1);
         if (isDarkSlide) {
-          mainHeader.className = 'w-full h-16 bg-[#041133] border-b border-slate-800 px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0 text-slate-300';
-          mainFooter.className = 'w-full h-16 bg-[#041133] border-t border-slate-800 px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0 text-slate-300';
+          mainHeader.className = 'w-full h-14 sm:h-16 bg-[#041133] border-b border-slate-800 px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0 text-slate-300';
+          mainFooter.className = 'w-full h-14 sm:h-16 bg-[#041133] border-t border-slate-800 px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0 text-slate-300';
           brandNameText.className = 'text-white font-bold text-sm tracking-wider uppercase transition-colors';
-          directorateText.className = 'text-slate-400 font-medium text-xs tracking-wider uppercase transition-colors';
-          printPdfBtn.className = 'px-3 py-1.5 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-medium flex items-center gap-1.5';
-          fullscreenBtn.className = 'px-3 py-1.5 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-medium';
-          prevBtn.className = 'px-4 py-2 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none';
-          nextBtn.className = 'px-5 py-2 rounded bg-brand-gold text-[#041133] hover:bg-yellow-400 font-bold transition-colors text-xs font-semibold';
+          directorateText.className = 'text-slate-400 font-medium text-xs tracking-wider uppercase transition-colors hidden sm:block';
+          printPdfBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-medium flex items-center gap-1.5';
+          overviewBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-medium flex items-center gap-1.5';
+          fullscreenBtn.className = 'px-3 py-1.5 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-medium hidden md:block';
+          prevBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 rounded border border-slate-700 text-slate-300 hover:text-white hover:border-slate-500 transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none';
+          nextBtn.className = 'px-3.5 sm:px-5 py-1.5 sm:py-2 rounded bg-brand-gold text-[#041133] hover:bg-yellow-400 font-bold transition-colors text-xs font-semibold';
           currentCounter.className = 'text-brand-gold font-bold';
         } else {
-          mainHeader.className = 'w-full h-16 bg-white border-b border-silver-border px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0 text-silver';
-          mainFooter.className = 'w-full h-16 bg-white border-t border-silver-border px-8 sm:px-14 flex items-center justify-between z-30 flex-shrink-0 text-silver';
+          mainHeader.className = 'w-full h-14 sm:h-16 bg-white border-b border-silver-border px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0 text-silver';
+          mainFooter.className = 'w-full h-14 sm:h-16 bg-white border-t border-silver-border px-4 sm:px-8 md:px-14 flex items-center justify-between z-30 flex-shrink-0 text-silver';
           brandNameText.className = 'text-brand-blue font-bold text-sm tracking-wider uppercase transition-colors';
-          directorateText.className = 'text-silver-dark font-medium text-xs tracking-wider uppercase transition-colors';
-          printPdfBtn.className = 'px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium flex items-center gap-1.5';
-          fullscreenBtn.className = 'px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium';
-          prevBtn.className = 'px-4 py-2 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none';
-          nextBtn.className = 'px-5 py-2 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-semibold';
+          directorateText.className = 'text-silver-dark font-medium text-xs tracking-wider uppercase transition-colors hidden sm:block';
+          printPdfBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium flex items-center gap-1.5';
+          overviewBtn.className = 'px-2.5 sm:px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium flex items-center gap-1.5';
+          fullscreenBtn.className = 'px-3 py-1.5 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-medium hidden md:block';
+          prevBtn.className = 'px-3 sm:px-4 py-1.5 sm:py-2 rounded border border-silver-border text-silver-dark hover:text-brand-blue hover:border-brand-blue transition-colors text-xs font-semibold disabled:opacity-30 disabled:pointer-events-none';
+          nextBtn.className = 'px-3.5 sm:px-5 py-1.5 sm:py-2 rounded bg-brand-blue text-white hover:bg-slate-900 transition-colors text-xs font-semibold';
           currentCounter.className = 'text-brand-blue font-bold';
         }
 
@@ -1311,7 +1546,59 @@
         });
       }
 
+      // Overview Grid Handlers
+      if (overviewBtn) {
+        overviewBtn.addEventListener('click', toggleOverviewModal);
+      }
+      if (closeOverviewBtn) {
+        closeOverviewBtn.addEventListener('click', closeOverviewModal);
+      }
+      if (overviewModal) {
+        overviewModal.addEventListener('click', (e) => {
+          if (e.target === overviewModal) closeOverviewModal();
+        });
+      }
+      overviewCards.forEach(card => {
+        card.addEventListener('click', () => {
+          const idx = parseInt(card.getAttribute('data-slide-index'), 10);
+          if (!isNaN(idx)) {
+            goToSlide(idx);
+            closeOverviewModal();
+          }
+        });
+      });
+
       window.addEventListener('keydown', (e) => {
+        // Close modal on Escape
+        if (e.code === 'Escape') {
+          closeOverviewModal();
+          return;
+        }
+
+        // Toggle modal on G
+        if (e.code === 'KeyG') {
+          e.preventDefault();
+          toggleOverviewModal();
+          return;
+        }
+
+        // Number keys 1-9 and 0 to jump directly
+        if (/^Digit[1-9]$/.test(e.code) || /^Numpad[1-9]$/.test(e.code)) {
+          const num = parseInt(e.key, 10);
+          if (num >= 1 && num <= totalSlides) {
+            goToSlide(num - 1);
+            closeOverviewModal();
+            return;
+          }
+        }
+        if (e.code === 'Digit0' || e.code === 'Numpad0') {
+          if (totalSlides >= 10) {
+            goToSlide(9);
+            closeOverviewModal();
+            return;
+          }
+        }
+
         // Keyboard navigation
         if (['ArrowRight', 'ArrowLeft', 'Space', 'ArrowUp', 'ArrowDown', 'PageUp', 'PageDown'].includes(e.code)) {
           e.preventDefault();
@@ -1356,15 +1643,24 @@
 
       let touchStartX = 0;
       let touchEndX = 0;
+      let touchStartY = 0;
+      let touchEndY = 0;
 
       window.addEventListener('touchstart', (e) => {
         touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
       }, { passive: true });
 
       window.addEventListener('touchend', (e) => {
         touchEndX = e.changedTouches[0].screenX;
-        if (touchEndX < touchStartX - 50) nextSlide();
-        if (touchEndX > touchStartX + 50) prevSlide();
+        touchEndY = e.changedTouches[0].screenY;
+        const diffX = touchEndX - touchStartX;
+        const diffY = touchEndY - touchStartY;
+        // Only trigger slide navigation if swipe is predominantly horizontal and exceeds threshold
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 50) {
+          if (diffX < 0) nextSlide();
+          if (diffX > 0) prevSlide();
+        }
       }, { passive: true });
 
       initDots();
