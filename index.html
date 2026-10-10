@@ -1488,6 +1488,12 @@
           nextBtn.textContent = 'Next Slide';
         }
 
+        try {
+          if (window.location.hash !== '#' + (currentIndex + 1)) {
+            history.replaceState(null, '', '#' + (currentIndex + 1));
+          }
+        } catch (err) {}
+
         // Adaptive chrome theming for dark slides (Slide 1 and Slide 10)
         const isDarkSlide = (currentIndex === 0 || currentIndex === totalSlides - 1);
         if (isDarkSlide) {
@@ -1663,8 +1669,27 @@
         }
       }, { passive: true });
 
+      function getInitialSlide() {
+        const hashMatch = window.location.hash.match(/^#(\d+)$/);
+        if (hashMatch) {
+          const num = parseInt(hashMatch[1], 10);
+          if (num >= 1 && num <= totalSlides) return num - 1;
+        }
+        return 0;
+      }
+
+      window.addEventListener('hashchange', () => {
+        const hashMatch = window.location.hash.match(/^#(\d+)$/);
+        if (hashMatch) {
+          const num = parseInt(hashMatch[1], 10);
+          if (num >= 1 && num <= totalSlides && num - 1 !== currentIndex) {
+            updateSlide(num - 1);
+          }
+        }
+      });
+
       initDots();
-      updateSlide(0);
+      updateSlide(getInitialSlide());
 
     })();
   </script>
